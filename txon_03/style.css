@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(45deg,#E55D87,#5FC3E4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.todo-list{
+    width:350px;
+    margin-top: 40px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: white;
+}
+.title{
+    text-align: center;
+    font-weight: 600;
+    color:rgb(6, 6, 8);
+}
+.entered-list{
+    padding: 5px;
+    width: 85%;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: #df346a;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.473);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task
+{
+    border: none;
+    outline: none;
+}
+.completed {
+    text-decoration: line-through;
+}
